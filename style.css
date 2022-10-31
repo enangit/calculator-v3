@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  cursor: pointer;
+}
+
+.button {
+  border: none;
+}
+
+.container {
+  min-width: 30%;
+
+  /*   height: 90vh; */
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container .outputs {
+  background-color: rgb(39, 57, 109);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container .outputs input {
+  color: white;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 5px;
+  text-align: right;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.container .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-area: span 5;
+  gap: 5px;
+  padding: 5px 0;
+}
+.container .buttons .button.span-2 {
+  grid-column: span 2;
+}
+
+.container .buttons .button {
+  background-color: rgb(196, 196, 196);
+  box-shadow: 2px 0 2px 2px rgba(12, 12, 12, 0.205);
+  border-radius: 5px;
+
+  min-height: 50px;
+  transition: background-color 200ms ease-in-out;
+}
+.container .buttons .button:hover {
+  background-color: rgb(211, 211, 211);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Version 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="outputs">
+        <input
+          id="previous-operand"
+          type="text"
+          readonly="readonly"
+          value=""
+          data-previous-operand
+        />
+        <input
+          id="current-operand"
+          type="text"
+          readonly="readonly"
+          value=""
+          data-current-operand
+        />
+      </div>
+      <div class="buttons">
+        <button class="button" data-all-clear>AC</button>
+        <button class="button" data-operator>%</button>
+        <button class="button" data-delete>Del</button>
+        <button class="button" data-operator>/</button>
+        <button class="button" data-number>7</button>
+        <button class="button" data-number>8</button>
+        <button class="button" data-number>9</button>
+        <button class="button" data-operator>x</button>
+        <button class="button" data-number>4</button>
+        <button class="button" data-number>5</button>
+        <button class="button" data-number>6</button>
+        <button class="button" data-operator>-</button>
+        <button class="button" data-number>1</button>
+        <button class="button" data-number>2</button>
+        <button class="button" data-number>3</button>
+        <button class="button" data-operator>+</button>
+        <button class="button" data-number>0</button>
+        <button class="button" data-number>.</button>
+        <button class="button span-2" data-equals>=</button>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
